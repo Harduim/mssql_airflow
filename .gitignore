@@ -1,0 +1,14 @@
+.vscode
+logs
+*__pycache__*
+airflow.cfg
+*.db
+*.cfg
+.vscode
+*.csv
+airflow-webserver.pid
+dags/.airflowignore
+.mypy_cache
+*.pytest_cache
+*.egg-info
+*.ipynb
