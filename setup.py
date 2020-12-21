@@ -17,7 +17,7 @@ setup(
     long_description_content_type="text/markdown",
     entry_points={"airflow.plugins": ["mssql_hook = alternative_mssql_hook.mssql_hook:MsSQLHook"]},
     python_requires=">=3.6",
-    install_requires=["pymssql", "sqlalchemy"],
+    install_requires=["pymssql", "sqlalchemy", "apache-airflow[mssql]"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Linux",
