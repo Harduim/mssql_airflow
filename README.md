@@ -11,6 +11,10 @@ python -m pip install git+https://github.com/Harduim/mssql_airflow.git
 ```
 
 ## Features
+- Use SQLAlchemy Connections with `MsSQLHook.get_sqlalchemy_engine`
+- Get a pandas dataframe from a query using `MsSQLHook.get_sqlalchemy_engine`
+- Multiline inserts with `MsSQLHook.batch_insert_rows`
+- All other methods already implemented by [DbApiHook](https://airflow.apache.org/docs/apache-airflow/stable/_modules/airflow/hooks/dbapi.html)
 
 ## Instructions and sample usage
 
