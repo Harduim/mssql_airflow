@@ -2,7 +2,7 @@
 
 A minimal Airflow [Hook](https://airflow.apache.org/docs/apache-airflow/stable/concepts.html?highlight=hook#hooks) for interacting with [Microsoft SQL Server](https://www.microsoft.com/pt-br/sql-server/)
 
-Enables the usage of [DbApiHook](https://airflow.apache.org/docs/apache-airflow/stable/_modules/airflow/hooks/dbapi.html) methods that the [provided Hook for SQL Server](http://airflow.apache.org/docs/apache-airflow-providers-microsoft-mssql/stable/_modules/airflow/providers/microsoft/mssql/hooks/mssql.html#MsSqlHook) does not supports, such as **.get_sqlalchemy_engine** and **.get_pandas_df**.
+Enables the usage of [DbApiHook](https://airflow.apache.org/docs/apache-airflow/stable/_modules/airflow/hooks/dbapi.html) methods that the [provided Hook for SQL Server](http://airflow.apache.org/docs/apache-airflow-providers-microsoft-mssql/stable/_modules/airflow/providers/microsoft/mssql/hooks/mssql.html#MsSqlHook) does not support, such as **.get_sqlalchemy_engine** and **.get_pandas_df**.
 
 
 ## Install 
