@@ -12,7 +12,16 @@ python -m pip install git+https://github.com/Harduim/mssql_airflow.git
 
 ## Features
 
-## Sample usage
+## Instructions and sample usage
+
+- Create a connection on **Admin** => **Conections**
+  - **Conn Id**: Name of the conection, used on the parameter **mssql_conn_id**
+  - **Conn Type**: Microsoft SQL Server
+  - **Host**: The IP address or hostname of the server
+  - **Schema**: The **Database** not actual schema. Not sure why there is no "database" field, I'm just following Airflow's convention
+  - **Password**: The password
+  - **Login**: The user name. Use 'domain\username' for Windows auth.
+
 
 ### Airflow 1.10
 ```python
@@ -24,7 +33,9 @@ from airflow.operators.python_operator import PythonOperator
 
 
 def sample_usage():
+    # Schema is the database, not the actual schema.
     mssql = MsSQLHook(mssql_conn_id="my_conn", schema="some_database")
+
     # This method (get_pandas_df) does not with the regular mssql plugin
     df = mssql.get_pandas_df("SELECT * FROM TABLE")
 
@@ -68,6 +79,7 @@ from airflow.operators.python import PythonOperator
 
 
 def sample_usage():
+    # Schema is the database, not the actual schema.
     mssql = MsSQLHook(mssql_conn_id="my_conn", schema="some_database")
 
     # This method (get_pandas_df) does not with the regular mssql plugin
