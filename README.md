@@ -40,7 +40,7 @@ def sample_usage():
     # Schema is the database, not the actual schema.
     mssql = MsSQLHook(mssql_conn_id="my_conn", schema="some_database")
 
-    # This method (get_pandas_df) does not with the regular mssql plugin
+    # This method (get_pandas_df) does not work with the regular mssql plugin
     df = mssql.get_pandas_df("SELECT * FROM TABLE")
 
     # All the regular dbapihook methods works
@@ -86,7 +86,7 @@ def sample_usage():
     # Schema is the database, not the actual schema.
     mssql = MsSQLHook(mssql_conn_id="my_conn", schema="some_database")
 
-    # This method (get_pandas_df) does not with the regular mssql plugin
+    # This method (get_pandas_df) does not work with the regular mssql plugin
     df = mssql.get_pandas_df("SELECT * FROM TABLE")
 
     # All the default dbapihook methods works
